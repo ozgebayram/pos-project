@@ -1,6 +1,7 @@
 // import { Button } from "antd";
 // import { Button } from "antd";
 
+import Categories from "./components/categories/Categories";
 import Header from "./components/header/Header";
 
 
@@ -10,7 +11,7 @@ function App() {
       <Header/>
       <div className="home px-6 flex justify-between">
         <div className="categories">
-          <div>categories</div>
+          <Categories/>
         </div>
         <div className="products">
           <div>products</div>
