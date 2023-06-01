@@ -2,7 +2,7 @@
 const Categories = () => {
   return (
 	<div>
-		<ul className="flex gap-4 flex-col text-lg">
+		<ul className="flex gap-4 md:flex-col text-lg">
 			<li className=" min-w[145px]">
 				<span>All</span>
 			</li>
