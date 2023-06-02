@@ -14,7 +14,7 @@ function App() {
       <div className="home px-6 flex md:flex-row flex-col justify-between gap-10 md:pb-0 pb-24">
         <div className="categories  overflow-auto max-h-[calc(100vh_-_112px)] md:pb-10">
           {/* yukarıda scroll verdik ve pb-64 ile de scroll un sonunda boşluk bıraktık */}
-          {/* bu bir slider kutuphanesi ile d eyapılabılır */}
+          {/* bu bir slider kutuphanesi ile d eyapılabılır. */}
           <Categories/>
         </div>
         <div className="products flex-[8] max-h-[calc(100vh_-_112px)] overflow-y-auto pb-10">
