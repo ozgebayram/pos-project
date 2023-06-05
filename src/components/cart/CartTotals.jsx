@@ -1,6 +1,10 @@
 import React from "react";
 import { Button } from "antd";
-import { ClearOutlined, PlusCircleOutlined, MinusCircleOutlined } from "@ant-design/icons";
+import {
+  ClearOutlined,
+  PlusCircleOutlined,
+  MinusCircleOutlined,
+} from "@ant-design/icons";
 
 const CartTotals = () => {
   return (
@@ -28,8 +32,8 @@ const CartTotals = () => {
               className="w-full  flex items-center justify-center !rounded-full"
               icon={<PlusCircleOutlined />}
             />
-			<span className="font-bold">1</span>
-			<Button
+            <span className="font-bold">1</span>
+            <Button
               type="primary"
               size="small"
               className="w-full  flex items-center justify-center !rounded-full"
@@ -37,7 +41,7 @@ const CartTotals = () => {
             />
           </div>
         </li>
-		<li className="cart-item flex justify-between">
+        <li className="cart-item flex justify-between">
           <div className="flex items-center">
             <img
               src="https://img.piri.net/resim/imagecrop/2020/09/26/12/21/resized_dcc79-24191133elma.jpg"
@@ -56,8 +60,8 @@ const CartTotals = () => {
               className="w-full  flex items-center justify-center !rounded-full"
               icon={<PlusCircleOutlined />}
             />
-			<span className="font-bold">1</span>
-			<Button
+            <span className="font-bold">1</span>
+            <Button
               type="primary"
               size="small"
               className="w-full  flex items-center justify-center !rounded-full"
@@ -65,7 +69,7 @@ const CartTotals = () => {
             />
           </div>
         </li>
-		<li className="cart-item flex justify-between">
+        <li className="cart-item flex justify-between">
           <div className="flex items-center">
             <img
               src="https://img.piri.net/resim/imagecrop/2020/09/26/12/21/resized_dcc79-24191133elma.jpg"
@@ -84,8 +88,8 @@ const CartTotals = () => {
               className="w-full  flex items-center justify-center !rounded-full"
               icon={<PlusCircleOutlined />}
             />
-			<span className="font-bold">1</span>
-			<Button
+            <span className="font-bold">1</span>
+            <Button
               type="primary"
               size="small"
               className="w-full  flex items-center justify-center !rounded-full"
@@ -93,7 +97,6 @@ const CartTotals = () => {
             />
           </div>
         </li>
-		
       </ul>
       <div className="cart-totals mt-auto">
         <div className="border-t border-b">
@@ -129,6 +132,7 @@ const CartTotals = () => {
         </div>
       </div>
     </div>
+	
   );
 };
 

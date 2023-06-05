@@ -1,8 +1,8 @@
 import React from 'react'
-import CartTotals from "./components/cart/CartTotals";
-import Categories from "./components/categories/Categories";
-import Header from "./components/header/Header";
-import Products from "./components/products/Products";
+import CartTotals from "../components/cart/CartTotals";
+import Categories from "../components/categories/Categories";
+import Header from "../components/header/Header";
+import Products from "../components/products/Products";
 
 const HomePage = () => {
   return (
@@ -24,5 +24,9 @@ const HomePage = () => {
 	  </>
   )
 }
+// md:-mr-[24px] md:-mt-[24px] = bu özellik shopping list yazısını yukarı ve sola sıfırladı
+
 
 export default HomePage
+
+

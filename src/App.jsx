@@ -1,10 +1,16 @@
-import { BrowserRouter, Routes } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import CartPage from "./pages/CartPage";
 
 function App() {
   return (
     <>
       <BrowserRouter>
-      <Routes></Routes>
+      <Routes>
+        <Route path="/" element={<HomePage/>}/>
+        <Route path="/cart" element={<CartPage/>}/>
+
+      </Routes>
       </BrowserRouter>
     </>
   );
@@ -13,4 +19,3 @@ function App() {
 //  
 export default App;
 
-// md:-mr-[24px] md:-mt-[24px] = bu özellik shopping list yazısını yukarı ve sola sıfırladı
