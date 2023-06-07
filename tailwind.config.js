@@ -3,11 +3,10 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {},
-      gridTemplateColumns:{
-        card:"repeat(auto-fill, minmax(150px,1fr))"
-      }
-      // grid template colums kısmında producları card olarak yanyana ve kucuk hale getirdik,aynı zmaanda responsive oldu
+    gridTemplateColumns: {
+      "card": "repeat(auto-fill, minmax(150px,1fr))",
+    },
+    // grid template colums kısmında producları card olarak yanyana ve kucuk hale getirdik,aynı zmaanda responsive oldu
   },
   plugins: [],
-}
-
+};

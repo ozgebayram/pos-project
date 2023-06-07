@@ -2,7 +2,7 @@ import React from 'react'
 import Header from '../components/header/Header'
 import { Button, Card, Table } from "antd";
 import { useState } from "react";
-import PrintBill from '../components/bills/PrintBills';
+import PrintBill from '../components/bills/PrintBill';
 
 const BillPage = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
