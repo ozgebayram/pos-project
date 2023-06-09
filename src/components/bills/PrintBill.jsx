@@ -73,7 +73,15 @@ const PrintBill = ({ isModalOpen, setIsModalOpen }) => {
                     </th>
                     <th
                       scope="col"
-                      className="py-3.5  text-left text-sm font-normal text-slate-700  md:pl-0 "
+                      className="py-3.5  text-left text-sm font-normal text-slate-700  md:pl-0 sm:table-cell hidden"
+                    >
+                      {" "}
+                      Başlık
+                    </th>
+                    <th
+                    colSpan={4}
+                      scope="col"
+                      className="py-3.5  text-left text-sm font-normal text-slate-700  md:pl-0  sm:hidden"
                     >
                       {" "}
                       Başlık
@@ -100,7 +108,7 @@ const PrintBill = ({ isModalOpen, setIsModalOpen }) => {
                 </thead>
                 <tbody>
                   <tr className="border-b border-slate-200">
-                    <td className="py-4 ">
+                    <td className="py-4 sm:table-cell hidden ">
                       <img
                         src="https://i.lezzet.com.tr/images-xxlarge-secondary/elma-nasil-yenir-221135ca-f383-474c-a4f5-ad02a45db978.jpg"
                         alt=""
@@ -108,15 +116,18 @@ const PrintBill = ({ isModalOpen, setIsModalOpen }) => {
                       />
                     </td>
                     <td className="py-4">
-                      <span className="font-medium sm:table-cell hidden">Şalgam</span>
+                      <div className="flex flex-col">
+                      <span className="font-medium ">Şalgam</span>
+                      <span className="font-medium sm:hidden inline-block text-xs">1 unit at 5₺</span>
+                      </div>
                     </td>
-                    <td className="py-4 text-center">
+                    <td className="py-4 text-center sm:table-cell hidden">
                       <span>5₺</span>
                     </td>
-                    <td className="py-4 text-center">
+                    <td className="py-4 sm:text-center right sm:table-cell hidden">
                       <span>1</span>
                     </td>
-                    <td className="py-4 text-end">
+                    <td className="py-4 text-end ">
                       <span>5.00₺</span>
                     </td>
                   </tr>
@@ -128,7 +139,7 @@ const PrintBill = ({ isModalOpen, setIsModalOpen }) => {
                         Subtotal
                       </span>
                     </th>
-                    <th className="text-left pt-4 sm:hidden "  scope="row">
+                    <th className="text-left pt-4 sm:hidden " colSpan="4" scope="row">
                       <p className="font-normal text-slate-700">
                         Subtotal
                       </p>
@@ -138,8 +149,15 @@ const PrintBill = ({ isModalOpen, setIsModalOpen }) => {
                     </th>
                   </tr>
                   <tr>
-                    <th className="text-right pt-4" colSpan="4" scope="row">
-                      <span className="font-normal text-slate-700">Tax</span>
+                  <th className="text-right pt-4 sm:table-cell hidden" colSpan="4" scope="row">
+                      <span className="font-normal text-slate-700">
+                        Tax
+                      </span>
+                    </th>
+                    <th className="text-left pt-4 sm:hidden " colSpan="4" scope="row">
+                      <p className="font-normal text-slate-700">
+                        Tax
+                      </p>
                     </th>
                     <th className="text-right pt-4" scope="row">
                       <span className="font-normal text-red-600">+4.88₺</span>
