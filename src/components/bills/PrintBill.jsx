@@ -113,7 +113,7 @@ const PrintBill = ({ isModalOpen, setIsModalOpen }) => {
                       <td className="py-4 sm:table-cell hidden ">
                         <img
                           src="https://i.lezzet.com.tr/images-xxlarge-secondary/elma-nasil-yenir-221135ca-f383-474c-a4f5-ad02a45db978.jpg"
-                          alt=""
+                          alt="apple"
                           className="w-12 h-12 object-cover"
                         />
                       </td>
