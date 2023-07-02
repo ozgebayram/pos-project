@@ -11,7 +11,7 @@ const StatisticPage = () => {
             Welcome{" "}
             <span className="text-green-700 font-bold text-xl">Admin</span>{" "}
           </h2>
-		  <div className="statistic-cards flex ">
+		  <div className="statistic-cards  grid grid-cols-card">
 			<div className="card-item bg-gray-800">
 				sdfg
 			</div>
